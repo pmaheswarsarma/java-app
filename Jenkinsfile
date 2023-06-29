@@ -26,7 +26,7 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"
 
                 bat 'java --version'
-                bat 'python --version'
+                bat 'python sysarg.py 10 20'
             }
         }
     }
