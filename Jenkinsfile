@@ -25,7 +25,7 @@ pipeline {
 
                 echo "Password: ${params.PASSWORD}"
           
-                bat 'python sysarg.py 10 20 30 40'
+                bat 'python sysarg.py ${params.PERSON} ${params.BIOGRAPHY} ${params.TOGGLE} ${params.CHOICE}'
                                 
             }
         }
