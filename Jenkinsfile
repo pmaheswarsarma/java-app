@@ -14,6 +14,7 @@ pipeline {
          
     stages {
         stage('Example') {
+            parallel{
             steps {
                                
                 echo "Hello ${params.PERSON}"
@@ -28,8 +29,7 @@ pipeline {
           
                 bat "python sysarg.py '${params.PERSON}' '${params.BIOGRAPHY}' '${params.TOGGLE}' '${params.CHOICE}' "
             }
-        }
-        stage('Test') {
+
             steps {
                                
                 bat "java --version"
