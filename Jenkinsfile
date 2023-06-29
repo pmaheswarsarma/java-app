@@ -24,11 +24,9 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
 
                 echo "Password: ${params.PASSWORD}"
-
-             
-                bat 'python sysarg.py 10 20'
-                bat 'python--version'
-                
+          
+                bat 'python sysarg.py 10 20 30 40'
+                                
             }
         }
     }
