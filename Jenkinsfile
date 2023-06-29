@@ -29,10 +29,6 @@ pipeline {
                 bat "python sysarg.py '${params.PERSON}' '${params.BIOGRAPHY}' '${params.TOGGLE}' '${params.CHOICE}' "
             }
         }
-    }
-    
-
-    stages {
         stage('Test') {
             steps {
                                
