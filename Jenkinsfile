@@ -11,8 +11,7 @@ pipeline {
 
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
-    parallel{
-      
+         
     stages {
         stage('Example') {
             steps {
@@ -28,6 +27,10 @@ pipeline {
                 echo "Password: ${params.PASSWORD}"
           
                 bat "python sysarg.py '${params.PERSON}' '${params.BIOGRAPHY}' '${params.TOGGLE}' '${params.CHOICE}' "
+            }
+        }
+    }
+    
 
     stages {
         stage('Test') {
@@ -37,6 +40,4 @@ pipeline {
             }
             }
         }
-    }
-}
     }
