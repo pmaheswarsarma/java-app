@@ -34,7 +34,7 @@ pipeline {
             steps {
                                
                 bat "java --version"
-              
+            }
             }
         }
     }
