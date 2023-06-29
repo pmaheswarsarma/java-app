@@ -1,0 +1,24 @@
+pipeline {
+  agent any
+  stages {
+      parallel {
+        stage('linux-armv6') {
+          
+          steps {
+            echo 'go install dpctl'
+          }
+        }
+        stage('darwin-amd64') {
+          steps {
+            echo 'go install dpctl'
+          }
+        }
+        stage('linux-amd64') {
+        
+          steps {
+            echo 'go install dpctl'
+          }
+        }
+      }
+    }
+  }
