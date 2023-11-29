@@ -1,2 +1,2 @@
-This is for testing pulll request on java-app repo
+This is for testing push request on java-app repo
 
